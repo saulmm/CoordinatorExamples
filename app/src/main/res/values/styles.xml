@@ -8,4 +8,13 @@
 		<item name="colorPrimaryDark">@color/brand_primary_dark</item>
 		<item name="colorAccent">@color/brand_accent</item>
 	</style>
+
+	<style name="AppTheme.MainActivity">
+		<!--<item name="android:windowDrawsSystemBarBackgrounds">true</item>-->
+		<!--<item name="android:statusBarColor">@android:color/transparent</item>-->
+	</style>
+
+	<style name="ToolBarWithNavigationBack">
+		<item name="navigationIcon">@drawable/abc_ic_ab_back_mtrl_am_alpha</item>
+	</style>
 </resources>

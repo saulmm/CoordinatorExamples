@@ -17,7 +17,7 @@ public class SimpleCoordinatorFragment extends Fragment {
 	public View onCreateView(LayoutInflater inflater, ViewGroup container,
 		Bundle savedInstanceState) {
 
-		mRootView = inflater.inflate(R.layout.fragment_io, container, false);
+		mRootView = inflater.inflate(R.layout.fragment_simple_coordinator, container, false);
 		return mRootView;
 	}
 
