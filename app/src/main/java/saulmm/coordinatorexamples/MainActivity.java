@@ -11,7 +11,7 @@ public class MainActivity extends AppCompatActivity {
 
 		if (savedInstanceState == null) {
 			getSupportFragmentManager().beginTransaction()
-				.add(android.R.id.content, IoExampleFragment.newInstance())
+				.add(android.R.id.content, MaterialUpConceptFragment.newInstance())
 				.commit();
 		}
 	}
