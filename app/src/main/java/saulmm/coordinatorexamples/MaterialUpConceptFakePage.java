@@ -9,13 +9,10 @@ import android.view.View;
 import android.view.ViewGroup;
 
 public class MaterialUpConceptFakePage extends Fragment {
-
 	private RecyclerView mRootView;
 
 	@Nullable @Override
-	public View onCreateView(LayoutInflater inflater, ViewGroup container,
-		Bundle savedInstanceState) {
-
+	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		mRootView = (RecyclerView) inflater.inflate(R.layout.fragment_page, container, false);
 		return mRootView;
 	}
@@ -23,7 +20,6 @@ public class MaterialUpConceptFakePage extends Fragment {
 	@Override public void onActivityCreated(@Nullable Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		initRecyclerView();
-
 	}
 
 	private void initRecyclerView() {
@@ -33,11 +29,5 @@ public class MaterialUpConceptFakePage extends Fragment {
 	public static Fragment newInstance() {
 		return new MaterialUpConceptFakePage();
 	}
-
-
-
-
-
-
 
 }

@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout
+	xmlns:android="http://schemas.android.com/apk/res/android"
+	xmlns:app="http://schemas.android.com/apk/res-auto"
+	xmlns:tools="http://schemas.android.com/tools"
+	android:layout_width="match_parent"
+	android:layout_height="match_parent"
+	>
+
+	<android.support.design.widget.AppBarLayout
+		android:id="@+id/appBarLayout"
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_scrollFlags="scroll|enterAlways"
+		>
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/main.toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="?attr/actionBarSize"
+			android:background="?colorPrimary"
+			android:title="@string/app_name"
+			android:elevation="4dp"
+			app:theme="@style/ThemeOverlay.AppCompat.Dark"
+			app:title="@string/app_name"
+			/>
+	</android.support.design.widget.AppBarLayout>
+
+	<ScrollView
+		android:layout_width="match_parent"
+		android:layout_height="wrap_content"
+		app:layout_behavior="@string/appbar_scrolling_view_behavior"
+		>
+
+		<LinearLayout
+			android:orientation="vertical"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			>
+
+			<android.support.v7.widget.CardView
+				android:layout_gravity="center"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				app:contentPaddingRight="8dp"
+				app:contentPaddingLeft="8dp"
+				app:contentPaddingBottom="8dp"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/header_about"
+						android:textAppearance="@style/TextAppearance.Header"
+						style="@style/TextComponent.ItemRow"
+						/>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/about"
+						android:lineSpacingExtra="6dp"
+						/>
+
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+
+			<android.support.v7.widget.CardView
+				android:layout_gravity="center"
+				android:layout_width="match_parent"
+				android:layout_height="wrap_content"
+				android:layout_margin="8dp"
+				>
+
+				<LinearLayout
+					android:layout_width="match_parent"
+					android:layout_height="wrap_content"
+					android:orientation="vertical"
+					tools:ignore="RtlHardcoded"
+					>
+
+					<TextView
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/header_examples"
+						android:textAppearance="@style/TextAppearance.Header"
+						android:paddingRight="8dp"
+						android:paddingLeft="8dp"
+						style="@style/TextComponent.ItemRow"
+						/>
+
+					<TextView
+						android:id="@+id/main.coordinator.textview"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/item_simple_coordinator_example"
+						android:textAppearance="@style/TextAppearance.ItemExample"
+						android:drawableRight="@drawable/ic_arrow_forward_24dp"
+						style="@style/TextComponent.ItemRow.Selectable"
+						/>
+
+					<TextView
+						android:id="@+id/main.ioexample.textview"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/item_googleio_example"
+						android:textAppearance="@style/TextAppearance.ItemExample"
+						android:drawableRight="@drawable/ic_arrow_forward_24dp"
+						style="@style/TextComponent.ItemRow.Selectable"
+						/>
+
+					<TextView
+						android:id="@+id/main.materialup.textview"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/item_materialup_example"
+						android:textAppearance="@style/TextAppearance.ItemExample"
+						android:drawableRight="@drawable/ic_arrow_forward_24dp"
+						style="@style/TextComponent.ItemRow.Selectable"
+						/>
+
+
+					<TextView
+						android:id="@+id/main.space.textview"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="@string/item_flexible_space_example"
+						android:textAppearance="@style/TextAppearance.ItemExample"
+						android:drawableRight="@drawable/ic_arrow_forward_24dp"
+						style="@style/TextComponent.ItemRow.Selectable"
+						/>
+				</LinearLayout>
+			</android.support.v7.widget.CardView>
+
+		</LinearLayout>
+	</ScrollView>
+</android.support.design.widget.CoordinatorLayout>

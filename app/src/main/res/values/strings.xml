@@ -1,8 +1,45 @@
 <resources>
 	<string name="app_name">Coordinator Examples</string>
-	<string name="lorem_ipsum">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Etiam non tellus risus. Fusce viverra vitae turpis hendrerit tincidunt. Pellentesque imperdiet elit a massa tincidunt rhoncus. Pellentesque in posuere nisl. Aenean in turpis at neque accumsan pulvinar. Integer efficitur odio at suscipit varius. Nam in magna vitae magna euismod molestie. Proin sed aliquet erat, eget laoreet nisi. Mauris elit enim, scelerisque non commodo et, pulvinar imperdiet eros. Mauris ac pretium felis.
 
-Praesent fringilla pharetra diam ut dignissim. Curabitur sapien est, varius et risus ut, posuere egestas ligula. Sed et dui id lacus suscipit feugiat et eget nisi. Quisque a libero egestas orci volutpat vestibulum. Aliquam tincidunt ligula nec metus aliquet, quis auctor felis iaculis. Nulla aliquam lacus lacus, fermentum tempor erat ornare id. Pellentesque ac laoreet neque. Mauris dui libero, pharetra sed placerat non, dictum a nulla.
+	<string name="example_title">This is an awesome title</string>
+	<string name="example_subtitle">I\'m a cool subtitle, larger than the title</string>
 
-Pellentesque id velit metus. Nam suscipit dapibus risus. Phasellus tincidunt elementum mi, sit amet mollis nulla. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas. Maecenas volutpat egestas dolor, ac eleifend felis. Phasellus at orci in nibh consequat hendrerit. Donec aliquet enim sed efficitur dictum. Sed et laoreet nulla, sollicitudin convallis urna. Pellentesque venenatis felis ante, semper bibendum leo pulvinar ac. Maecenas in augue nibh. Aliquam pharetra quam vitae metus consectetur lacinia. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris varius, quam nec facilisis maximus, felis arcu volutpat eros, et interdum libero nisl ac arcu. Maecenas elementum augue nec ullamcorper interdum. Morbi bibendum neque ac enim imperdiet, ac scelerisque metus venenatis.</string>
+	<string name="text_header">Text</string>
+	<string name="flexible_title">Cool stuff</string>
+
+	<string name="header_about">About</string>
+	<string name="header_examples">Examples</string>
+
+	<string name="item_flexible_space_example">Flexible space example</string>
+	<string name="item_simple_coordinator_example">Simple coordinator example</string>
+	<string name="item_googleio_example">Google IO Detail example</string>
+	<string name="item_materialup_example">Material up profile example</string>
+
+	<string name="lorem">
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+		In mollis est vitae erat laoreet consectetur. Mauris dui mauris,
+		dictum vel egestas vel, porta sed ante. Phasellus congue viverra ipsum,
+		in elementum arcu ultricies nec.Morbi tincidunt nisl lacinia, placerat nisi eget, luctus tortor.
+		Morbi efficitur dictum leo, sit amet volutpat lorem sodales nec. Quisque et erat et turpis fringilla condimentum.
+		Lorem ipsum dolor sit amet, consectetur adipiscing elit. Mauris auctor vulputate libero vitae iaculis.
+		Curabitur id blandit quam. Praesent massa ante, pulvinar vitae sagittis commodo, scelerisque porttitor eros.
+		Mauris suscipit a enim nec congue. Mauris tristique cursus aliquet. Nunc quis hendrerit nunc. Praesent tristique tellus purus,
+		a pretium ex gravida id. Cras laoreet malesuada nulla, at bibendum metus ultricies a. Fusce eu ornare arcu. Proin ut molestie est.
+		Vestibulum quis vehicula erat. Nam sed tempus nibh. Sed tortor ante, maximus venenatis odio sed, ultricies maximus lectus.
+		Aliquam sed volutpat ligula. Integer bibendum, magna ac lacinia suscipit,
+		risus libero rutrum justo, sed tempus augue tellus eget est. Curabitur convallis augue nisl,
+		id efficitur urna posuere faucibus. Ut sed egestas nulla, eu finibus metus. Nunc a arcu ante.
+		Aenean ullamcorper dolor non condimentum congue. Aenean mauris nunc, pellentesque at placerat vitae,
+		aliquet quis orci. Curabitur maximus augue ut bibendum sagittis.
+	</string>
+
+	<string name="about">
+		This example shows different CoordinatorLayout usage examples, like the use of \'anchor\' in views,
+		flexible space and some more tips.\n\n
+
+		This code has also been used as an example for the presentation given at the Spanish GDG Summit 2015:
+		\'Tools and tips of the trade for the Android developer\'. Whose slides will be published soon :)
+
+		\n\n Enjoy
+	</string>
 </resources>

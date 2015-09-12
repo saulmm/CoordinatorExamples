@@ -68,7 +68,7 @@
 				android:layout_height="wrap_content"
 				android:minHeight="?attr/actionBarSize"
 				android:background="?colorPrimary"
-				app:theme="@style/ThemeOverlay.AppCompat.Dark"
+				app:theme="@style/ThemeOverlay.AppCompat.Light"
 				style="@style/ToolBarWithNavigationBack"
 				/>
 
