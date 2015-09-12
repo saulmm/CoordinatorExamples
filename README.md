@@ -5,7 +5,7 @@ This example shows different CoordinatorLayout usage examples. like the use of '
 
 Example:
 
-![]()
+![](https://github.com/saulmm/CoordinatorExamples/blob/master/art/example.gif?raw=true)
 
 This code has also been used as an example for the keynote given at the Spanish GDG Summit 2015:
 
