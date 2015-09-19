@@ -9,9 +9,7 @@ Example:
 
 This code has also been used as an example for the keynote given at the Spanish GDG Summit 2015:
 
-_Tools and tips of the trade for the Android developer._
-
-[Slides](https://speakerdeck.com/saulmm/tools-and-tips-of-the-trade-for-the-android-developer)
+[Tools and tips of the trade for the Android developer](https://speakerdeck.com/saulmm/tools-and-tips-of-the-trade-for-the-android-developer)
 
 Enjoy
 
