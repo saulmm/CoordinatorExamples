@@ -11,6 +11,14 @@ This code has also been used as an example for the keynote given at the Spanish 
 
 _Tools and tips of the trade for the Android developer._
 
-Slides will be published soon :)
+[Slides](https://speakerdeck.com/saulmm/tools-and-tips-of-the-trade-for-the-android-developer)
 
 Enjoy
+
+### License 
+
+```
+This Source Code Form is subject to the terms of the Mozilla Public 
+License, v. 2.0. If a copy of the MPL was not distributed with this 
+file, You can obtain one at http://mozilla.org/MPL/2.0/.
+```
