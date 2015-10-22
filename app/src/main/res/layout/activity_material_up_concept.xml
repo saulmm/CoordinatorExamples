@@ -9,18 +9,18 @@
 	<android.support.design.widget.AppBarLayout
 		android:id="@+id/materialup.appbar"
 		android:layout_width="match_parent"
-		android:layout_height="250dp"
+		android:layout_height="wrap_content"
 		android:theme="@style/ThemeOverlay.AppCompat.Dark.ActionBar"
 		>
 
 		<android.support.design.widget.CollapsingToolbarLayout
 			android:id="@+id/main.collapsing"
 			android:layout_width="match_parent"
-			android:layout_height="match_parent"
-			app:layout_scrollFlags="scroll|exitUntilCollapsed"
+			android:layout_height="200dp"
 			app:contentScrim="?attr/colorPrimary"
 			app:expandedTitleMarginStart="48dp"
 			app:expandedTitleMarginEnd="64dp"
+			app:layout_scrollFlags="scroll|snap"
 			>
 
 			<ImageView
@@ -32,6 +32,69 @@
 				app:layout_collapseMode="parallax"
 				/>
 		</android.support.design.widget.CollapsingToolbarLayout>
+
+		<de.hdodenhof.circleimageview.CircleImageView
+			android:id="@+id/materialup.profile_image"
+			android:layout_width="96dp"
+			android:layout_height="96dp"
+			android:layout_marginTop="-48dp"
+			android:layout_gravity="center_horizontal"
+			android:src="@drawable/user_avatar"
+			android:elevation="8dp"
+			app:border_width="2dp"
+			app:border_color="#FFF"
+			app:layout_scrollFlags="scroll"
+
+			/>
+
+		<android.support.v7.widget.Toolbar
+			android:id="@+id/materialup.toolbar"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:minHeight="?attr/actionBarSize"
+			android:background="?colorPrimary"
+			android:layout_marginTop="-48dp"
+			app:theme="@style/ThemeOverlay.AppCompat.Light"
+			app:layout_scrollFlags="scroll|enterAlways|snap"
+			style="@style/ToolBarWithNavigationBack"
+			/>
+
+		<LinearLayout
+			android:id="@+id/materialup.title_container"
+			android:layout_width="match_parent"
+			android:layout_height="wrap_content"
+			android:orientation="vertical"
+			android:gravity="center"
+			app:layout_scrollFlags="scroll|enterAlways|snap"
+			>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title"
+				android:text="Saúl Molinero"
+				/>
+
+			<TextView
+				android:layout_width="wrap_content"
+				android:layout_height="wrap_content"
+				android:layout_marginTop="4dp"
+				android:layout_marginBottom="4dp"
+				android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle"
+				android:text="Here I am with a subtitle"
+				android:textColor="@android:color/white"
+				/>
+
+		</LinearLayout>
+
+		<android.support.design.widget.TabLayout
+			android:id="@+id/materialup.tabs"
+			android:layout_width="fill_parent"
+			android:layout_height="?attr/actionBarSize"
+			app:tabSelectedTextColor="?android:attr/textColorPrimaryInverse"
+			app:tabIndicatorColor="?android:attr/textColorPrimaryInverse"
+			app:tabIndicatorHeight="4dp"
+			/>
 	</android.support.design.widget.AppBarLayout>
 
 	<!-- The top margin value equals half height of the blue box -->
@@ -39,75 +102,8 @@
 		android:id="@+id/materialup.viewpager"
 		android:layout_width="match_parent"
 		android:layout_height="match_parent"
-		android:layout_marginTop="84dp"
 		app:layout_behavior="@string/appbar_scrolling_view_behavior"
 		/>
-
-	<FrameLayout
-		android:id="@+id/main.toolbar"
-		android:layout_width="match_parent"
-		android:layout_height="wrap_content"
-		android:background="@color/brand_primary"
-		android:elevation="4dp"
-		app:layout_anchor="@id/materialup.appbar"
-		app:layout_anchorGravity="bottom"
-		>
-
-		<LinearLayout
-			android:layout_width="match_parent"
-			android:layout_height="wrap_content"
-			android:layout_gravity="bottom"
-			android:minHeight="?android:attr/actionBarSize"
-			android:gravity="center_horizontal"
-			android:orientation="vertical"
-			>
-
-			<android.support.v7.widget.Toolbar
-				android:id="@+id/materialup.toolbar"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:minHeight="?attr/actionBarSize"
-				android:background="?colorPrimary"
-				app:theme="@style/ThemeOverlay.AppCompat.Light"
-				style="@style/ToolBarWithNavigationBack"
-				/>
-
-			<LinearLayout
-				android:id="@+id/materialup.title_container"
-				android:layout_width="match_parent"
-				android:layout_height="wrap_content"
-				android:orientation="vertical"
-				android:gravity="center"
-				>
-
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Title.Inverse"
-					android:text="Saúl Molinero"
-					/>
-
-				<TextView
-					android:layout_width="wrap_content"
-					android:layout_height="wrap_content"
-					android:layout_marginTop="4dp"
-					android:layout_marginBottom="4dp"
-					android:textAppearance="@style/TextAppearance.AppCompat.Widget.ActionBar.Subtitle.Inverse"
-					android:text="Here I am with a subtitle"
-					/>
-
-			</LinearLayout>
-
-			<android.support.design.widget.TabLayout
-				android:id="@+id/materialup.tabs"
-				android:layout_width="fill_parent"
-				android:layout_height="?attr/actionBarSize"
-				app:tabSelectedTextColor="?android:attr/textColorPrimaryInverse"
-				app:tabIndicatorColor="?android:attr/textColorPrimaryInverse"
-				app:tabIndicatorHeight="4dp"
-				/>
-		</LinearLayout>
-	</FrameLayout>
 
 	<android.support.design.widget.FloatingActionButton
 		android:layout_height="wrap_content"
@@ -119,15 +115,4 @@
 		android:clickable="true"
 		/>
 
-	<de.hdodenhof.circleimageview.CircleImageView
-		android:id="@+id/materialup.profile_image"
-		android:layout_width="96dp"
-		android:layout_height="96dp"
-		app:layout_anchor="@id/main.toolbar"
-		app:layout_anchorGravity="top|center"
-		android:src="@drawable/user_avatar"
-		android:elevation="8dp"
-		app:border_width="2dp"
-		app:border_color="#FFF"
-		/>
 </android.support.design.widget.CoordinatorLayout>
