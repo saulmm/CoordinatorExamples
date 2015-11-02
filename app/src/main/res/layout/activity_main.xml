@@ -127,12 +127,21 @@
 						style="@style/TextComponent.ItemRow.Selectable"
 						/>
 
-
 					<TextView
 						android:id="@+id/main.space.textview"
 						android:layout_width="match_parent"
 						android:layout_height="wrap_content"
 						android:text="@string/item_flexible_space_example"
+						android:textAppearance="@style/TextAppearance.ItemExample"
+						android:drawableRight="@drawable/ic_arrow_forward_24dp"
+						style="@style/TextComponent.ItemRow.Selectable"
+						/>
+
+					<TextView
+						android:id="@+id/main.swipebehavior.textview"
+						android:layout_width="match_parent"
+						android:layout_height="wrap_content"
+						android:text="Swype Behavior example"
 						android:textAppearance="@style/TextAppearance.ItemExample"
 						android:drawableRight="@drawable/ic_arrow_forward_24dp"
 						style="@style/TextComponent.ItemRow.Selectable"
