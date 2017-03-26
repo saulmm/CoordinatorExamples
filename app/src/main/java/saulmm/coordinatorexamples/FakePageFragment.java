@@ -23,16 +23,17 @@ import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 
-public class MaterialUpConceptFakePage extends Fragment {
+public class FakePageFragment extends Fragment {
 	private RecyclerView mRootView;
 
-	@Nullable @Override
+	@Override
 	public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState) {
 		mRootView = (RecyclerView) inflater.inflate(R.layout.fragment_page, container, false);
 		return mRootView;
 	}
 
-	@Override public void onActivityCreated(@Nullable Bundle savedInstanceState) {
+	@Override
+	public void onActivityCreated(@Nullable Bundle savedInstanceState) {
 		super.onActivityCreated(savedInstanceState);
 		initRecyclerView();
 	}
@@ -42,7 +43,39 @@ public class MaterialUpConceptFakePage extends Fragment {
 	}
 
 	public static Fragment newInstance() {
-		return new MaterialUpConceptFakePage();
+		return new FakePageFragment();
 	}
 
+
+	private static class FakePageAdapter extends RecyclerView.Adapter<FakePageVH> {
+		private final int numItems;
+
+		FakePageAdapter(int numItems) {
+			this.numItems = numItems;
+		}
+
+		@Override
+		public FakePageVH onCreateViewHolder(ViewGroup viewGroup, int i) {
+			View itemView = LayoutInflater.from(viewGroup.getContext())
+				.inflate(R.layout.list_item_card, viewGroup, false);
+
+			return new FakePageVH(itemView);
+		}
+
+		@Override
+		public void onBindViewHolder(FakePageVH fakePageVH, int i) {
+			// do nothing
+		}
+
+		@Override
+		public int getItemCount() {
+			return numItems;
+		}
+	}
+
+	private static class FakePageVH extends RecyclerView.ViewHolder {
+		FakePageVH(View itemView) {
+			super(itemView);
+		}
+	}
 }
