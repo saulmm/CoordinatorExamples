@@ -33,8 +33,6 @@
 
 		<activity android:name=".SwipeBehaviorExampleActivity"/>
 
-		<activity android:name=".BehaviorExample">
-		</activity>
-	</application>
+    </application>
 
 </manifest>
