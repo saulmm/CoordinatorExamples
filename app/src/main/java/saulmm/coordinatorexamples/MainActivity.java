@@ -24,7 +24,6 @@ import android.view.MenuItem;
 import android.view.View;
 
 public class MainActivity extends AppCompatActivity implements View.OnClickListener {
-
 	private static final String GITHUB_REPO_URL = "https://github.com/saulmm/CoordinatorExamples";
 
 	@Override

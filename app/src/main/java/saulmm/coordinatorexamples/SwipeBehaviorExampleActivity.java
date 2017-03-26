@@ -27,15 +27,13 @@ import android.widget.Toast;
 
 public class SwipeBehaviorExampleActivity extends AppCompatActivity {
 
-	private CardView mCardView;
-
 	@Override
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_swipe_behavior);
-		mCardView = (CardView) findViewById(R.id.swype_card);
 
-		final SwipeDismissBehavior<CardView> swipe = new SwipeDismissBehavior();
+
+		final SwipeDismissBehavior swipe = new SwipeDismissBehavior();
 		swipe.setSwipeDirection(SwipeDismissBehavior.SWIPE_DIRECTION_ANY);
 		swipe.setListener(new SwipeDismissBehavior.OnDismissListener() {
 			@Override public void onDismiss(View view) {
@@ -46,7 +44,8 @@ public class SwipeBehaviorExampleActivity extends AppCompatActivity {
 			@Override public void onDragStateChanged(int state) {}
 		});
 
-		LayoutParams coordinatorParams = (LayoutParams) mCardView.getLayoutParams();
+		CardView cardView = (CardView) findViewById(R.id.swype_card);
+		LayoutParams coordinatorParams = (LayoutParams) cardView.getLayoutParams();
 		coordinatorParams.setBehavior(swipe);
 	}
 
