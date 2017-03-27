@@ -27,11 +27,6 @@ public class SimpleCoordinatorActivity extends AppCompatActivity {
 	public void onCreate(Bundle savedInstanceState) {
 		super.onCreate(savedInstanceState);
 		setContentView(R.layout.activity_simple_coordinator);
-
-		CollapsingToolbarLayout collapsingToolbarLayout =
-			(CollapsingToolbarLayout) findViewById(R.id.main_collapsing);
-
-		collapsingToolbarLayout.setTitle(getString(R.string.app_name));
 	}
 
 	public static void start(Context c) {
