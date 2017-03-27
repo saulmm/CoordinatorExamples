@@ -1,9 +1,8 @@
 # Coordinator Examples
 
+This repository host the source code shown in examples in the article [Mastering Coordinator Layout], there you can find different usages of the CoordinatorLayout, like anchoring views, flexible spaces, swipe to dismiss among other useful tips.
 
-This example shows different CoordinatorLayout usage examples. like the use of 'anchor' in views, flexible space and some more tips.
-
-Example:
+### Example:
 
 ![](https://github.com/saulmm/CoordinatorExamples/blob/master/art/example.gif?raw=true)
 
@@ -11,12 +10,8 @@ This code has also been used as an example for the keynote given at the Spanish 
 
 [Tools and tips of the trade for the Android developer](https://speakerdeck.com/saulmm/tools-and-tips-of-the-trade-for-the-android-developer)
 
-Enjoy
+### Screens:
 
-### License 
+![](https://github.com/saulmm/CoordinatorExamples/blob/master/art/screens.png?raw=true)
 
-```
-This Source Code Form is subject to the terms of the Mozilla Public 
-License, v. 2.0. If a copy of the MPL was not distributed with this 
-file, You can obtain one at http://mozilla.org/MPL/2.0/.
-```
+
