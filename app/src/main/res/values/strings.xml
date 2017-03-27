@@ -43,4 +43,6 @@
 		\n\n Enjoy
 	</string>
 	<string name="swype.help">The \'Swipe to dismiss\' behavior allows you to easily add the \'Swipe to dismiss\' functionality in a View inside a CoordinatorLayout</string>
+	<string name="title_mup_name">Saúl Molinero</string>
+	<string name="subtitle_mup">Here I am with a subtitle</string>
 </resources>
