@@ -18,8 +18,8 @@ package saulmm.coordinatorexamples;
 import android.content.Context;
 import android.content.Intent;
 import android.os.Bundle;
-import android.support.design.widget.CollapsingToolbarLayout;
-import android.support.v7.app.AppCompatActivity;
+
+import androidx.appcompat.app.AppCompatActivity;
 
 public class SimpleCoordinatorActivity extends AppCompatActivity {
 
