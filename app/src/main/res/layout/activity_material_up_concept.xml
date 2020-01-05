@@ -106,8 +106,6 @@
 		android:src="@drawable/user_avatar"
 		app:layout_anchor="@id/materialup.title_container"
 		android:elevation="8dp"
-		app:border_width="2dp"
-		app:border_color="#FFF"
 		app:layout_scrollFlags="scroll"
 		app:layout_anchorGravity="top|center_horizontal"
 
